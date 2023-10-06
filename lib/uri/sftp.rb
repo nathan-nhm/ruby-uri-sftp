@@ -11,7 +11,7 @@ require 'cgi'
 module URI
 
   ## SFTP is built around secure shell. 
-  class FTPS < Generic
+  class SFTP < Generic
     DEFAULT_PORT = 22
 
     def self.build(args)
@@ -26,6 +26,6 @@ module URI
     end
   end
 
-  register_scheme 'FTPS', FTPS
+  register_scheme 'SFTP', SFTP
 end
 
